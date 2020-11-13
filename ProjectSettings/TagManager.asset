@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StairMain1
+  - StairMain2
+  - StairR1
+  - StairR2
+  - StairL1
+  - StairL2
   layers:
   - Default
   - TransparentFX
