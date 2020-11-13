@@ -2541,7 +2541,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.471115
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3028,8 +3028,8 @@ GameObject:
   - component: {fileID: 741648617}
   - component: {fileID: 741648616}
   - component: {fileID: 741648614}
-  - component: {fileID: 741648615}
   - component: {fileID: 741648619}
+  - component: {fileID: 741648615}
   m_Layer: 0
   m_Name: student
   m_TagString: Untagged
@@ -3063,8 +3063,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0290352, y: 0}
-  m_Size: {x: 0.9092862, y: 2.1899998}
+  m_Offset: {x: 0.003029972, y: 0.011361499}
+  m_Size: {x: 0.74620456, y: 1.9854933}
   m_Direction: 0
 --- !u!50 &741648616
 Rigidbody2D:
@@ -3146,7 +3146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741648613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.434967, y: -3.0645149, z: 0}
+  m_LocalPosition: {x: -7.5, y: -3.2, z: 0}
   m_LocalScale: {x: 4.124601, y: 4.124601, z: 4.124601}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4532,7 +4532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076530928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.479, y: -32, z: -3.2544284}
+  m_LocalPosition: {x: -2.479, y: -32, z: 0}
   m_LocalScale: {x: 0.046830416, y: 20.993397, z: 1}
   m_Children: []
   m_Father: {fileID: 783332652}
