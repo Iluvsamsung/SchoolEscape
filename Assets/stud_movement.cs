@@ -34,4 +34,12 @@ public class stud_movement : MonoBehaviour
             transform.eulerAngles = Vector3.zero;
         }
     }
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        Debug.Log("충돌");
+        if (coll.gameObject.tag == "stair")
+        {
+            Debug.Log("stair");
+        }
+    }
 }
