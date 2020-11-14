@@ -21,30 +21,28 @@ public class stud_movement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * speed, Time.deltaTime * 1f);
-            isRunning = true;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left * speed, Time.deltaTime * 1f);
-            isRunning = true;
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down * speed, Time.deltaTime * 1f);
-            isRunning = true;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right * speed, Time.deltaTime * 1f);
-            isRunning = true;
             transform.eulerAngles = Vector3.zero;
         }
-        if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow))) isRunning = false;
-        if (isRunning)
+        if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow)))
         {
-            ani.enabled = true;
-        }else ani.enabled = false;
+            ani.SetBool("isRunning", false);
+        }else
+        {
+            ani.SetBool("isRunning", true);
+        }
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
