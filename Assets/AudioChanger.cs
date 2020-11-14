@@ -3,16 +3,16 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UIElements;
 
-public class AudioChanger
+public class AudioChanger : MonoBehaviour
 {
-	public AudioMixer masterMixer;
+	public AudioMixer MasterMixer;
 	public Slider audioSlider;
 
 	public void AudioControl()
     {
 		float sound = audioSlider.value;
 
-		if (sound == -40f) masterMixer.SetFloat("MasterVolume", -80);
-		else masterMixer.SetFloat("masterVolume", sound);
+		if (sound == -40f) MasterMixer.SetFloat("Master", -80f);
+		else MasterMixer.SetFloat("Master", sound);
     }
 }
