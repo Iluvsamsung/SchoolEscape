@@ -98,6 +98,13 @@ public class stud_movement : MonoBehaviour
                 Debug.Log("stairR2");
                 transform.position = new Vector3(140, 52, 0);
             }
+            if(InPlace == Places.복도_1층)
+            {
+                InPlace = Places.복도_2층;
+            }else
+            {
+                InPlace = Places.복도_1층;
+            }
         }
 
     }
