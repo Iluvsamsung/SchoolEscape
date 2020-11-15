@@ -48,35 +48,39 @@ public class stud_movement : MonoBehaviour
         //1층 중앙 (-22, 60) 1층 왼쪽 (-184, 52) 1층 오른쪽 (140, 52)
         //2층 중앙 (-20, -256) 2층 왼쪽 (-180, -260) 2층 오른쪽 (230, -260)
         Debug.Log("충돌");
-        if (coll.gameObject.tag == "StairMain1")
+        if(coll.gameObject.tag == "stair")
         {
-            Debug.Log("stairmain1");
-            transform.position = new Vector3(0, -180, 0);
+            if (coll.gameObject.name == "StairMain1")
+            {
+                Debug.Log("stairmain1");
+                transform.position = new Vector3(-20, -256, 0);
+            }
+            if (coll.gameObject.name == "StairMain2")
+            {
+                Debug.Log("stairmain2");
+                transform.position = new Vector3(-22, 60, 0);
+            }
+            if (coll.gameObject.name == "StairL1")
+            {
+                Debug.Log("stairL1");
+                transform.position = new Vector3(-180, -260, 0);
+            }
+            if (coll.gameObject.name == "StairL2")
+            {
+                Debug.Log("stairL2");
+                transform.position = new Vector3(-184, 52, 0);
+            }
+            if (coll.gameObject.name == "StairR1")
+            {
+                Debug.Log("stairR1");
+                transform.position = new Vector3(230, -260, 0);
+            }
+            if (coll.gameObject.name == "StairR2")
+            {
+                Debug.Log("stairR2");
+                transform.position = new Vector3(140, 52, 0);
+            }
         }
-        if (coll.gameObject.tag == "StairMain2")
-        {
-            Debug.Log("stairmain2");
-            transform.position = new Vector3(0, -6, 0);
-        }
-        if (coll.gameObject.tag == "StairL1")
-        {
-            Debug.Log("stairL1");
-            transform.position = new Vector3(-90, -180, 0);
-        }
-        if (coll.gameObject.tag == "StairL2")
-        {
-            Debug.Log("stairL2");
-            transform.position = new Vector3(-90, -6, 0);
-        }
-        if (coll.gameObject.tag == "StairR1")
-        {
-            Debug.Log("stairR1");
-            transform.position = new Vector3(145, -180, 0);
-        }
-        if (coll.gameObject.tag == "StairR2")
-        {
-            Debug.Log("stairR2");
-            transform.position = new Vector3(96, -6, 0);
-        }
+
     }
 }

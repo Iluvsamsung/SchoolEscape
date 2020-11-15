@@ -1524,7 +1524,7 @@ GameObject:
   - component: {fileID: 386832196}
   m_Layer: 0
   m_Name: StairR1
-  m_TagString: StairR1
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2695,7 +2695,7 @@ GameObject:
   - component: {fileID: 586554027}
   m_Layer: 0
   m_Name: StairL2
-  m_TagString: StairL2
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5027,7 +5027,7 @@ GameObject:
   - component: {fileID: 1069115753}
   m_Layer: 0
   m_Name: StairR2
-  m_TagString: StairR2
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9425,7 +9425,7 @@ GameObject:
   - component: {fileID: 1921091219}
   m_Layer: 0
   m_Name: StairMain2
-  m_TagString: StairMain2
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10497,7 +10497,7 @@ GameObject:
   - component: {fileID: 2143016475}
   m_Layer: 0
   m_Name: StairL1
-  m_TagString: StairL1
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

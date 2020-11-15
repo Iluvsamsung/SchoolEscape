@@ -4,12 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - StairMain1
-  - StairMain2
-  - StairR1
-  - StairR2
-  - StairL1
-  - StairL2
   - student
   - stair
   layers:
