@@ -6,7 +6,6 @@ public class stud_movement : MonoBehaviour
 {
     const float speed = 20;
     public GameObject mainChar;
-    bool isRunning = false;
     Animator ani;
     // Start is called before the first frame update
     void Start()
@@ -46,8 +45,8 @@ public class stud_movement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        //1층 중앙 (0, -6) 1층 왼쪽 (-90, -6) 1층 오른쪽 (96, -6)
-        //2층 중앙 (0, -180) 2층 왼쪽 (-90, -180) 2층 오른쪽 (145, -180)
+        //1층 중앙 (-22, 60) 1층 왼쪽 (-184, 52) 1층 오른쪽 (140, 52)
+        //2층 중앙 (-20, -256) 2층 왼쪽 (-180, -260) 2층 오른쪽 (230, -260)
         Debug.Log("충돌");
         if (coll.gameObject.tag == "StairMain1")
         {
