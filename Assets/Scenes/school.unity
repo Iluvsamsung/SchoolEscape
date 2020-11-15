@@ -9643,7 +9643,7 @@ GameObject:
   - component: {fileID: 1983386699}
   m_Layer: 0
   m_Name: StairMain1
-  m_TagString: StairMain1
+  m_TagString: stair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

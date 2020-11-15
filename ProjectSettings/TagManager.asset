@@ -11,6 +11,7 @@ TagManager:
   - StairL1
   - StairL2
   - student
+  - stair
   layers:
   - Default
   - TransparentFX
