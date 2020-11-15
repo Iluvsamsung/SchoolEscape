@@ -4,26 +4,39 @@ using UnityEngine;
 
 
 
-public class opendoor : MonoBehaviour
+public class opendoor:MonoBehaviour
 {
 
 
 
     public Transform door;
 
-    void OnTriggerEnter(Collider coll)
+    void OnTriggerStay2D(Collider2D coll)
 
     {
 
-        if (coll.gameObject.tag == "student")
+        if (coll.gameObject.tag == "Player")
 
         {
 
-            door.GetComponent<Animation>().Play("openthedoor");
+            door.GetComponent<Animation>().Play("opendoorAni");
 
         }
 
     }
+    /*void OnTriggerExit2D(Collider2D coll)
+
+    {
+
+        if (coll.gameObject.tag == "Player")
+
+        {
+
+            door.GetComponent<Animation>().Play("closedoorAni");
+
+        }
+
+    }*/
 
 }
 
