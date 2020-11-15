@@ -11,7 +11,7 @@ public class PauseScreen : MonoBehaviour
 	public GameObject ButtonVisible;
 
     // Use this for initialization
-    void Start()
+    void Awake()
 	{
 		IsPause = false;
 		ButtonVisible.SetActive(false);

@@ -16,3 +16,4 @@ public class AudioChanger : MonoBehaviour
 		else MasterMixer.SetFloat("Master", sound);
     }
 }
+
