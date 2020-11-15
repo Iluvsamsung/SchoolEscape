@@ -11,6 +11,7 @@ public class stud_movement : MonoBehaviour
     {
         복도_1층,
         도서관,
+        보건실,
         행정실,
         교장실,
         발간실,
@@ -65,33 +66,33 @@ public class stud_movement : MonoBehaviour
     {
         //1층 중앙 (-22, 60) 1층 왼쪽 (-184, 52) 1층 오른쪽 (140, 52)
         //2층 중앙 (-20, -256) 2층 왼쪽 (-180, -260) 2층 오른쪽 (230, -260)
-        Debug.Log("충돌");
+        Debug.Log(coll.gameObject.name);
         if(coll.gameObject.tag == "stair")
         {
             if (coll.gameObject.name == "StairMain1")
             {
                 Debug.Log("stairmain1");
-                transform.position = new Vector3(-20, -256, 0);
+                transform.position = new Vector3(-20, -256, 1);
             }
             if (coll.gameObject.name == "StairMain2")
             {
                 Debug.Log("stairmain2");
-                transform.position = new Vector3(-22, 60, 0);
+                transform.position = new Vector3(-22, 60, 1);
             }
             if (coll.gameObject.name == "StairL1")
             {
                 Debug.Log("stairL1");
-                transform.position = new Vector3(-180, -260, 0);
+                transform.position = new Vector3(-180, -260, 1);
             }
             if (coll.gameObject.name == "StairL2")
             {
                 Debug.Log("stairL2");
-                transform.position = new Vector3(-184, 52, 0);
+                transform.position = new Vector3(-184, 52, 1);
             }
             if (coll.gameObject.name == "StairR1")
             {
                 Debug.Log("stairR1");
-                transform.position = new Vector3(230, -260, 0);
+                transform.position = new Vector3(230, -260, 1);
             }
             if (coll.gameObject.name == "StairR2")
             {
@@ -106,6 +107,51 @@ public class stud_movement : MonoBehaviour
                 InPlace = Places.복도_1층;
             }
         }
-
+    }
+    private void OnTriggerExit2D(Collider2D coll)
+    {
+        if(coll.tag == "placeChange")
+        {
+            if(coll.name == "library")
+            {
+                if (transform.position.y > coll.transform.position.y)
+                {
+                    InPlace = Places.복도_1층;
+                }
+                else InPlace = Places.도서관;
+            }
+            if(coll.name == "health")
+            {
+                if (transform.position.y > coll.transform.position.y)
+                {
+                    InPlace = Places.복도_1층;
+                }
+                else InPlace = Places.보건실;
+            }
+            if(coll.name == "publishing")
+            {
+                if (transform.position.y < coll.transform.position.y)
+                {
+                    InPlace = Places.복도_1층;
+                }
+                else InPlace = Places.발간실;
+            }
+            if (coll.name == "administration")
+            {
+                if (transform.position.y > coll.transform.position.y)
+                {
+                    InPlace = Places.복도_1층;
+                }
+                else InPlace = Places.행정실;
+            }
+            if (coll.name == "principal")
+            {
+                if (transform.position.x < coll.transform.position.x)
+                {
+                    InPlace = Places.행정실;
+                }
+                else InPlace = Places.교장실;
+            }
+        }
     }
 }
