@@ -7,11 +7,29 @@ public class stud_movement : MonoBehaviour
     const float speed = 20;
     public GameObject mainChar;
     Animator ani;
+    public enum Places
+    {
+        복도_1층,
+        도서관,
+        행정실,
+        교장실,
+        발간실,
+        복도_2층,
+        교실_1학년1반,
+        교실_1학년2반,
+        교실_1학년3반,
+        교실_1학년4반,
+        교실_1학년5반,
+        교실_1학년6반,
+        교실_1학년7반,
+        교무실
+    };
+    public Places InPlace;
     // Start is called before the first frame update
     void Start()
     {
         ani = GetComponent<Animator>();
-
+        InPlace = Places.도서관;
     }
 
     // Update is called once per frame
