@@ -6792,7 +6792,6 @@ GameObject:
   - component: {fileID: 1338824534}
   - component: {fileID: 1338824533}
   - component: {fileID: 1338824532}
-  - component: {fileID: 1338824536}
   - component: {fileID: 1338824535}
   m_Layer: 0
   m_Name: EventSystem
@@ -6849,15 +6848,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1338824535
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338824531}
-  m_Enabled: 1
---- !u!114 &1338824536
+--- !u!114 &1338824535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6872,15 +6863,9 @@ MonoBehaviour:
   sounds:
   - name: 
     clip: {fileID: 0}
-    source: {fileID: 0}
     loop: 0
   - name: 
     clip: {fileID: 0}
-    source: {fileID: 0}
-    loop: 0
-  - name: 
-    clip: {fileID: 0}
-    source: {fileID: 0}
     loop: 0
 --- !u!1 &1427773609
 GameObject:
@@ -8893,7 +8878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.40000916, y: -78.3}
+  m_AnchoredPosition: {x: -0.4000244, y: -78.29999}
   m_SizeDelta: {x: -298, y: -228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2004256277

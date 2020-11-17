@@ -8,6 +8,7 @@ public class stud_movement : MonoBehaviour
     public GameObject mainChar;
     bool isRunning = false;
     Animator ani;
+
     // Start is called before the first frame update
     void Start()
     {
